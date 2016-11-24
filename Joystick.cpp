@@ -1,7 +1,7 @@
 #include "Joystick.h"
 
 Joystick::Joystick(uint8_t pin_VRX, uint8_t pin_VRY, uint8_t pin_SW){
-	Serial.begin(9600);
+	//Serial.begin(9600);
 	pinMode(pin_VRX,INPUT);
 	pinMode(pin_VRY,INPUT);
 	pinMode(pin_SW,INPUT_PULLUP);
@@ -104,13 +104,13 @@ void Joystick::verifyJoystick(){
 
 
 // ********** Test ***************
-void Joystick::test(){  
+void Joystick::status(){  
   Serial.print("  || isPressed: "); Serial.print(this->isPressed());
   Serial.print("  || isUp: "); Serial.print(this->isUp());
   Serial.print("  || isDown: "); Serial.print(this->isDown());
   Serial.print("  || isRight: "); Serial.print(this->isRight());
   Serial.print("  || isLeft: "); Serial.println(this->isLeft());
-  delay(1000);
+  
  
 }
 

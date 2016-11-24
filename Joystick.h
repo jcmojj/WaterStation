@@ -47,7 +47,7 @@ class Joystick{
     
     void reset();
     void verifyJoystick();
-    void test();
+    void status();
 
   private:
     uint8_t _joystick;
